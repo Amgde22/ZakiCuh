@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By magide</title>
+    <style>
+body {
+    text-align: center;
+    background-color: rgb(71, 69, 69);
+    color: white;
+}
+.ashkal {
+
+
+}
+img {
+    width: 50%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>الدائرة</h1>
+<Div class="ashkal">
+
+<input id="circle" type="number"> 
+<label for="circle">: نصف القطر </label><br>
+
+<p> ( <span id="mo7it" ></span> )المحيط هو </p>
+<P> ( <span id="misa7a"></span> )المساحة هي </P>
+
+
+
+    <img src="./images/Circle-red.svg.png"> <br>
+
+    <p id="cursed"></p>
+</Div>
+
+<script>
+var dawira = document.getElementById("circle") ;
+var misa7a = dawira.value
+dawira.addEventListener("input" , calculate)
+
+function calculate() {
+    var one = parseFloat(dawira.value) || 0 ;
+    var ggg = dawira.value ;
+
+    document.getElementById("misa7a").innerText = (one*one*3.14) ;
+    document.getElementById("mo7it").innerText = (one*2*3.14) ;
+    if (ggg == 69420) {
+        document.getElementById("cursed").innerHTML = " <img src='./images/download.jpeg'>"
+       
+    }
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
